@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 img {
@@ -28,14 +28,15 @@ body {
     font-size: 1rem;
     font-weight: var(--fw-700);
     line-height: 1.0;
+    overflow: hidden;
 }
 
 .wrapper {
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin-top: 4.5rem;
 }
 
 .title {
@@ -57,10 +58,10 @@ body {
 }
 
 .container {
-    min-width: 640px;
+    width: 40rem;
     display: flex;
     flex-direction: column;
-    row-gap: 72px;
+    row-gap: 4.5rem;
 }
 
 .form {
@@ -98,6 +99,8 @@ body {
 }
 
 .list {
+    max-height: 23rem;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -116,7 +119,8 @@ body {
 
 .task {
     flex: 1;
-    text-transform: capitalize;
+    overflow: hidden;
+    margin: 0;
 }
 
 .check {
@@ -138,8 +142,9 @@ body {
 @media (max-width: 640px) {
 
     .container {
+        max-width: 100%;
         padding: 1rem;
-        min-width: auto;
+        flex-basis: auto;
     }
 }
 
@@ -149,7 +154,7 @@ body {
     }
 
     .form-btn {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem;
     }
 }
 
