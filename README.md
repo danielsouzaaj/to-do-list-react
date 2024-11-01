@@ -1,5 +1,8 @@
 # Lista de Tarefas
 
+![Prévia do projeto](./todolist-prev.png)
+**[Ver projeto](danielsouzaaj.github.io/to-do-list-react/)**
+
 Este projeto é uma aplicação de lista de tarefas (to-do list) simples e intuitiva, desenvolvida para ajudar no gerenciamento e organização de tarefas diárias. Ele permite que os usuários criem, removam e marquem tarefas como concluídas. Ideal para manter o foco e aumentar a produtividade!
 
 ## Funcionalidades:
